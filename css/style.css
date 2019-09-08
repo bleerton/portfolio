@@ -1,0 +1,256 @@
+.slides-navigation {
+    z-index: 6;
+}
+
+.slides-navigation .prev, .next {
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+    left: 20px;
+    background-image: url(../image/prev-button-slide.png);
+}
+
+.slides-navigation a.next {
+    right: 20px;
+    background-image: url(../image/next-button-slide.png);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(55, 0, 0, alpha);
+}
+
+.tittleMessage {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.tittleMessage .heading p {
+    color: #fff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.tittleMessage .heading .main {
+    font-size: 50px;
+}
+
+.tittleMessage .heading .sub {
+    font-size: 23px;
+}
+
+.section {
+    padding: 100px 0;
+    max-width: 100%;
+}
+
+.profileImage {
+    float: right;
+}
+
+.skillsSection, .contactSection {
+    background-color: black;
+    color: #fff;
+}
+
+.skill {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.chart {
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent {
+    color: #fff;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.chart .percent:after {
+    content: '%';
+}
+
+.squareItem {
+    margin-top: 30px;
+    position: relative;
+}
+
+.squareInnerContainer {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid #444;
+}
+
+.squareInnerContainer:after, .squareInnerContainer:before {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid #444;
+}
+
+.squareInnerContainer:before {
+    right: 0px;
+}
+
+.squareInnerContainer:after {
+    left: 0px;
+}
+
+.squareContent h2 {
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #000;
+}
+
+.squareContent h3 {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.contactSection {
+    text-align: center;
+}
+
+.contactSection button {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    background-color: #000000;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+    transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
+}
+
+.contactSection button span {
+    z-index: 9;
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    display: block;
+    left: 10%;
+    top: 0px;
+    line-height: 50px;
+}
+
+.contactSection button span:after {
+    content: '';
+    width: 130%;
+    left: -15%;
+    height: 0px;
+    background-color: #fff;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+    transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
+}
+
+.contactSection button span:hover:after {
+    height: 20px;
+    top: -5px;
+    transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
+}
+
+.contactSection button:hover {
+    transform: scale(1.1);
+    transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+}
+
+.filter {
+    text-align: center ;
+    width: 100% ;
+}
+
+.filter a {
+    color: black;
+    padding: 10px 18px;
+    display: block;
+    text-decoration: none;
+}
+
+.filter li {
+    display: inline-block;
+    padding: 5px ;
+}
+
+.filter .current {
+    background-color: #fff;
+    ;
+    color: black;
+}
+
+.filter a {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 8px 30px;
+}
+
+.filter a {
+	color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+.filter a:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: #000 0 80px 0px 2px inset;
+}
+
+.heading {
+    text-align: center ;
+    padding-bottom: 40px ;
+    width: 100% ;
+}
+
+#about {
+    text-align: center ;
+}
+
+#about p {
+    font-size: 20px ;
+}
+
+#about span {
+    padding: 4px ;
+    background-color: #f01191 ;
+    border-radius: 4px;
+}
