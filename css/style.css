@@ -125,7 +125,7 @@
     font-size: 56px;
     margin-bottom: 10px;
     font-weight: 400;
-    color: #000;
+    color: #000;s
 }
 
 .squareContent h3 {
@@ -139,8 +139,9 @@
 }
 
 .contactSection button {
+    
     display: block;
-    margin: auto;
+    margin : auto ;
     width: 150px;
     height: 50px;
     background-color: #000000;
