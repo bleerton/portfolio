@@ -104,7 +104,7 @@ $(document).ready(function () {
         }
     });
 
-    $("filters a").click(function() {
+    $("filters a").click(function () {
         $("filters.current").removeClass("current");
         $(this).addClass("current");
 
@@ -119,8 +119,8 @@ $(document).ready(function () {
             }
         });
 
-        return false ;
-    }) ;
+        return false;
+    });
 
 
 });

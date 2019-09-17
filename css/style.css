@@ -2,9 +2,9 @@
     z-index: 6;
 }
 
-.slides-container img {
+/* .slides-container img {
     filter: blur(2px) ;
-}
+} */
 
 .slides-navigation .prev, .next {
     width: 47px;
@@ -130,7 +130,7 @@
     margin-bottom: 10px;
     font-weight: 400;
     color: #000;
-    s
+    
 }
 
 .squareContent h3 {
