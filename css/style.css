@@ -364,6 +364,49 @@
     padding: 30px 5px ;
 }
 
-.copyrightSection p{
-    margin: 0 ;
+#navigation {
+    position: sticky; 
+    background-color: #000 ;
+    padding: 20px 10px ;
+    z-index: 100 ;
+    top: 0 ;
+}
+
+#navigation li{
+    padding: 0 10px ;
+
+}
+
+#navigation li a{
+    color: white ;
+}
+
+.navbar-brand , .navbar-brand:hover {
+    color: white ;
+}
+
+#navigation li{
+    text-align: center ;
+}
+
+.fixedNav #navigation {
+    position: fixed ;
+    top: 0 ;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+	color: #fff;
+}
+
+
+.fixedNav #navigation {
+	position: fixed;
+	top: 0;
 }
