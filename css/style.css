@@ -1,3 +1,40 @@
+@font-face {
+    font-family: 'Kindness';
+    src: url("../font/Kindness\ Swash.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Goliath';
+    src: url("../font/Goliath-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Modset';
+    src: url("../font/Modster\ Script\ Free.ttf") format("opentype");
+}
+
+body{
+    background-color: #bdc3c7 ;
+}
+
+
+img {
+    filter: brightness(50%);
+}
+
+.main {
+    font-size: 30px ;
+}
+
+.tag-section {
+    font-size: 55px ;
+}
+
+.main {
+    font-family: 'Modset';
+    margin-right: 500px ;
+  }
+
 .slides-navigation {
     z-index: 6;
 }
@@ -41,7 +78,7 @@
 }
 
 .tittleMessage .heading p {
-    color: #fff;
+    color: #bdc3c7 ;;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 100;
     letter-spacing: 7px;
@@ -53,6 +90,7 @@
 
 .tittleMessage .heading .sub {
     font-size: 23px;
+    margin-right: 500px ;
 }
 
 .section {
@@ -66,13 +104,14 @@
 
 .skillsSection, .contactSection {
     background-color: black;
-    color: #fff;
+    color: #bdc3c7;
 }
 
-.skill {
+.skills {
     text-align: center;
     margin-left: 10px;
 }
+
 
 .chart {
     position: relative;
@@ -89,7 +128,7 @@
 }
 
 .chart .percent {
-    color: #fff;
+    color: #bdc3c7;
     line-height: 152px;
     display: inline-block;
     font-size: 35px;
@@ -150,17 +189,18 @@
     height: 50px;
     background-color: #000000;
     cursor: pointer;
-    color: #fff;
+    color: #bdc3c7;
     outline: none;
     font-size: 16px;
     font-weight: bold;
     position: relative;
     overflow: hidden;
-    border: 2px solid #fff;
+    border: 2px solid #bdc3c7;
     transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
 }
 
 .contactSection button span {
+    text-decoration: none ;
     z-index: 9;
     position: absolute;
     width: 80%;
@@ -170,17 +210,30 @@
     top: 0px;
     line-height: 50px;
 }
-
+ 
 .contactSection button span:after {
+    text-decoration: none ;
     content: '';
     width: 130%;
     left: -15%;
     height: 0px;
-    background-color: #fff;
+    background-color: #bdc3c7;
     top: 0px;
     position: absolute;
     z-index: -1;
     transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
+}
+
+a {
+    color: #fff ;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     color:#fff ;
+     text-decoration:none; 
+     cursor:pointer;  
 }
 
 .contactSection button span:hover:after {
@@ -196,8 +249,8 @@
 }
 
 .filter a {
-	color: #bdc3c7;
-	border: 1px solid #bdc3c7;
+	color: #000;
+	border: 1px solid #000000;
 	padding: 10px 18px;
 	display: block;
 }
@@ -210,7 +263,7 @@
 .filter li .current {
     background-color: #000;
     ;
-    color: #fff;
+    color: #bdc3c7;
 }
 
 .filter {
@@ -277,7 +330,7 @@
 }
 
 .items .icons i {
-    color: #fff;
+    color: #bdc3c7;
     font-size: 20px;
     margin-top: 9px;
 }
@@ -315,8 +368,6 @@
 .items .item:hover .imageOverlay {
 	opacity: 1;
 }
-
-
 
 #about {
     text-align: center;
@@ -364,7 +415,7 @@
     padding: 30px 5px ;
 }
 
-#navigation {
+/* #navigation {
     position: sticky; 
     background-color: #000 ;
     padding: 20px 10px ;
@@ -409,4 +460,41 @@
 .fixedNav #navigation {
 	position: fixed;
 	top: 0;
+} */
+
+.contact a {
+    text-decoration: none ;
+    outline: none ;
 }
+
+#navigation {
+	background-color: #000;
+    padding: 10px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+	padding: 0 10px;
+}
+
+#navigation li a {
+	color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-toggler-icon {
+	background: url(../img/icons/menu.png);
+	background-size: 100%;
+}
+
+#navigation {
+	position: sticky;
+	top: 0;
+}
+
+

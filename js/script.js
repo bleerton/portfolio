@@ -1,4 +1,7 @@
+
 $(document).ready(function () {
+
+    
 
     $('#slides').superslides({
         animation: 'fade',
@@ -122,31 +125,38 @@ $(document).ready(function () {
         return false;
     });
 
-    $("#navigation li a").click(function(event) {
-		event.preventDefaults() ;
-
-		var targetElement = $(this).attr("href");
-		var targetPosition = $(targetElement).offset().top;
-		$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
-
-    });
-    
-    
-    const nav = $("#navigation");
-	const navTop = nav.offset().top;
-
-	$(window).on("scroll", stickyNavigation);
-
-	function stickyNavigation() {
-
-		var body = $("body");
-
-		if($(window).scrollTop() >= navTop) {
-			body.addClass("fixedNav");
-		}
-		else {
-			body.removeClass("fixedNav");
-		}
-    }
-
 });
+
+function scrollToId(id, el) {
+    // if (el != null) {
+    //     var input = $("#subject");
+    //     var subject = $(el).siblings("h5").text();
+
+    //     input.val(subject);
+    // }
+
+    $("html, body").animate({
+        scrollTop: $("#" + id).offset().top - 40 
+    });
+}
+
+
+// $(window).scroll(function () {
+
+//     var top = $(this).scrollTop();
+//     var currentImgWidth = 130;
+//     var imgWidth = 100;
+//     var padding = 5;
+
+//     if (top < 300) {
+//         imgWidth = currentImgWidth;
+//         padding = 20;
+//     }
+
+//     $("nav img").css("width", imgWidth);
+//     $("nav").css({
+//         "paddingTop": padding,
+//         "paddingBottom": padding
+//     });
+
+// });
