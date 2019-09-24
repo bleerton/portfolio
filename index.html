@@ -3,7 +3,7 @@
 
 <head>
     <title>Portfolio</title>
-    <meta charset="utf-16">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/superslides.css">
@@ -12,447 +12,448 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
 </head>
 
 <body>
-    <div id="slides">
-        <div class="overlay"></div>
-        <div class="tittleMessage">
-            <div class="heading">
-                <p class="main">BLERTON SHABANI</p>
-                <p class="sub typed"></p>
-            </div>
-        </div>
-        <div class="slides-container">
-            <img src="image/slide3.jpg" alt="">
-            <img src="image/slide5.webp" alt="">
-            <img src="image/slide2.jpeg" alt="">
-            <img src="image/slide1.jpg" alt="">
+
+    <div class="loader">
+        <div class="inner">
 
         </div>
-        <nav class="slides-navigation">
-            <a href="#" class="next"></a>
-            <a href="#" class="prev"></a>
-        </nav>
-    </div>
 
-    <!--<nav id="navigation" class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#"></a>
-
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
-    <!-- <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav navbar-center">
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#stats">Stats</a>
-                </li>
-
-                <li class="nav-item active">
-                    <a class="nav-link" href="#contact"">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
-
-    <nav id="navigation" class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html" style="padding: 0 40px ;">Blerton Shabani</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" onclick="scrollToId('slides', this)" class="btn btn-primary">Head</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="scrollToId('about', this)" class="btn btn-primary">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="scrollToId('stats', this)" class="btn btn-primary">Stats</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="scrollToId('contact', this)" class="btn btn-primary">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="scrollToId('portfolio', this)" class="btn btn-primary">Portfolio</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-
-    <div id="about" class="section">
-        <div class="container">
-            <h1 class="tag-section">ABOUT</h1>
-            <img src="image/about.png" alt="">
-            <p>
-                I'm a freelancer, full stack developer specialized in <span>Web</span>, <span>Progressive Web
-                    Apps</span> and <span>Mobile iOS/Android</span> projects. I've got experience in project management
-                and team lead. I also provide UX and IT consulting.
-            </p>
-            <br>
-
-            <p>
-                I speak fluently french, german and english and I'm currently based in Zürich, Switzerland.</p>
-
-            <br>
-            <p>
-                You could hire my services to work closely with your team or ask me to take over your overall project as
-                I did with the projects I showcase in my portfolio.
-            </p>
-            <p>I also LOVE ❤️ solving Coding Challenges using JavaScript!</p>
-        </div>
-    </div>
-
-    <div id="skills" class="skillsSection section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1 class="tag-section">TECHNINAL SKILLS</h2>
-                        <p>A representation of my proficiency in each skill</p>
-                </div>
-
-                <div class="owl-carousel owl-theme">
-                    <div class="skill">
-                        <span class="chart" data-percent="40">
-                            <span class="percent">40
-                            </span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-
-                        <h4>HTML</h4>
-                        <p>Used in most of my web projects</p>
-                    </div>
-                    <div class="skill">
-                        <span class="chart" data-percent="55">
-                            <span class="percent">55
-                            </span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-
-                        <h4>PYTHON</h4>
-                        <p>Used in most of my web projects</p>
-                    </div>
-                    <div class="skill">
-                        <span class="chart" data-percent="25">
-                            <span class="percent">25
-                            </span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-
-                        <h4>CSS3</h4>
-                        <p>Used in most of my web projects</p>
-                    </div>
-
-                    <div class="skill">
-                        <span class="chart" data-percent="60">
-                            <span class="percent">60
-                            </span>
-                            <canvas height="152" width="152"></canvas>
-                        </span>
-
-                        <h4>JAVA</h4>
-                        <p>Used in most of my web projects</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="stats" class="statsSection section">
-            <h1 class="tag-section" style="text-align: center ;">STATS</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-
-                    <div class="squareItem">
-
-                        <div class="squareInnerContainer">
-
-                            <div class="squareIcon">
-                                <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
-
-                            </div>
-                            
-
-                            <div class="squareContent">
-                                <h2 class="counter" data-count="3">0</h2>
-                                <h3>Years Experience</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-
-                    <div class="squareItem">
-
-                        <div class="squareInnerContainer">
-
-                            <div class="squareIcon">
-                                <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-
-                            </div>
-
-                            <div class="squareContent">
-                                <h2 class="counter" data-count="85">0</h2>
-                                <h3>Clients</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-
-                    <div class="squareItem">
-
-                        <div class="squareInnerContainer">
-
-                            <div class="squareIcon">
-                                <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
-
-                            </div>
-
-                            <div class="squareContent">
-                                <h2 class="counter" data-count="7">0</h2>
-                                <h3>iOS Apps</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6">
-
-                    <div class="squareItem">
-
-                        <div class="squareInnerContainer">
-
-                            <div class="squareIcon">
-                                <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-
-                            </div>
-
-                            <div class="squareContent">
-                                <h2 class="counter" data-count="25">0</h2>
-                                <h3>Websites made</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="contact" class="contactSection section">
-        <h4 class="subHeading">Like what you see ?</h2>
-
-            <h1 class="subHeading">I'd love to hear from you !</h1>
-            <button>
-                <div class="left"></div>
-                <div class="right"></div>
-                <span class="contactButton" onclick="window.open('https://t.me/blrtn')">GET IN TOUCH!</span></a>
-            </button>
-    </div>
-
-    <div id="portfolio" class="section">
-
-        <div class="container">
-
-            <div class="row">
-
+        <div id="slides">
+            <div class="overlay"></div>
+            <div class="tittleMessage">
                 <div class="heading">
-                    <h1 class="tag-section">PORTFOLIO</h1>
+                    <p class="main">BLERTON SHABANI</p>
+                    <p class="sub typed"></p>
                 </div>
+            </div>
 
-                <div class="filter">
+            <div class="slides-container">
+                <img src="image/slide3.jpg" alt="">
+                <img src="image/slide5.webp" alt="">
+                <img src="image/slide2.jpeg" alt="">
+                <img src="image/slide1.jpg" alt="">
 
-                    <ul id="filters">
+            </div>
 
-                        <li><a href="#" data-filter="*" class="current">ALL</a></li>
-                        <li><a href="#" data-filter=".apps">Apps</a></li>
-                        <li><a href="#" data-filter=".me">Me</a></li>
-                        <li><a href="#" data-filter=".websites">Websites</a></li>
+            <nav class="slides-navigation">
+                <a href="#" class="next"></a>
+                <a href="#" class="prev"></a>
 
-                    </ul>
+                <div class="hire-me">
+                    <button>
+                        <div class="left"></div>
+                        <div class="right"></div>
+                        <!-- <span class="contactButton" onclick="window.open('https://t.me/blrtn')">HIRE ME</span></a> -->
+                        <span class="contactButton" onclick="scrollToId('contact', this)" class="btn btn-primary">HIRE
+                            ME</span></a>
+                    </button>
+                </div>
+            </nav>
+
+        </div>
+
+
+
+        <nav id="navigation" class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html" style="padding: 0 40px ; font-family: Modset">Blerton Shabani</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" onclick="scrollToId('slides', this)" class="btn btn-primary">Head</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToId('about', this)" class="btn btn-primary">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToId('stats', this)" class="btn btn-primary">Stats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToId('contact', this)" class="btn btn-primary">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="scrollToId('portfolio', this)"
+                            class="btn btn-primary">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div id="about" class="section">
+            <div class="container">
+                <h1 class="tag-section">ABOUT</h1>
+                <img src="image/about.png" alt="">
+                <p>
+                    I'm a freelancer, full stack developer specialized in <span>Web</span>, <span>Progressive Web
+                        Apps</span> and <span>Mobile iOS/Android</span> projects. I've got experience in project
+                    management
+                    and team lead. I also provide UX and IT consulting.
+                </p>
+                <br>
+
+                <p>
+                    I speak fluently french, german and english and I'm currently based in Zürich, Switzerland.</p>
+
+                <br>
+                <p>
+                    You could hire my services to work closely with your team or ask me to take over your overall
+                    project as
+                    I did with the projects I showcase in my portfolio.
+                </p>
+                <p>I also LOVE ❤️ solving Coding Challenges using JavaScript!</p>
+            </div>
+        </div>
+
+        <div id="skills" class="skillsSection section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="tag-section">TECHNINAL SKILLS</h2>
+                            <p>A representation of my proficiency in each skill</p>
+                    </div>
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="skill">
+                            <span class="chart" data-percent="40">
+                                <span class="percent">40
+                                </span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+
+                            <h4>HTML</h4>
+                            <p>Used in most of my web projects</p>
+                        </div>
+                        <div class="skill">
+                            <span class="chart" data-percent="55">
+                                <span class="percent">55
+                                </span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+
+                            <h4>PYTHON</h4>
+                            <p>Used in most of my web projects</p>
+                        </div>
+                        <div class="skill">
+                            <span class="chart" data-percent="25">
+                                <span class="percent">25
+                                </span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+
+                            <h4>CSS3</h4>
+                            <p>Used in most of my web projects</p>
+                        </div>
+
+                        <div class="skill">
+                            <span class="chart" data-percent="60">
+                                <span class="percent">60
+                                </span>
+                                <canvas height="152" width="152"></canvas>
+                            </span>
+
+                            <h4>JAVA</h4>
+                            <p>Used in most of my web projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="stats" class="statsSection section">
+            <h1 class="tag-section" style="text-align: center ;">STATS</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+
+                        <div class="squareItem">
+
+                            <div class="squareInnerContainer">
+
+                                <div class="squareIcon">
+                                    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+
+                                </div>
+
+
+                                <div class="squareContent">
+                                    <h2 class="counter" data-count="3">0</h2>
+                                    <h3>Years Experience</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+
+                        <div class="squareItem">
+
+                            <div class="squareInnerContainer">
+
+                                <div class="squareIcon">
+                                    <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+
+                                </div>
+
+                                <div class="squareContent">
+                                    <h2 class="counter" data-count="85">0</h2>
+                                    <h3>Clients</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+
+                        <div class="squareItem">
+
+                            <div class="squareInnerContainer">
+
+                                <div class="squareIcon">
+                                    <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+
+                                </div>
+
+                                <div class="squareContent">
+                                    <h2 class="counter" data-count="7">0</h2>
+                                    <h3>iOS Apps</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+
+                        <div class="squareItem">
+
+                            <div class="squareInnerContainer">
+
+                                <div class="squareIcon">
+                                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+
+                                </div>
+
+                                <div class="squareContent">
+                                    <h2 class="counter" data-count="25">0</h2>
+                                    <h3>Websites made</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contactSection section">
+            <h4 class="subHeading contact-head">Like what you see ?</h2>
+                <h1 class="subHeading contact-head">I'd love to hear from you !</h1>
+                <div class="inputs">
+                    <input type="text" name="name" required>
+                    <label for="fullName">
+                        <span>
+                            Full Name
+                        </span>
+                    </label>
+
+                    <input type="text" name="surname" required>
+                    <label for="surname">
+                        <span>
+                            Surname
+                        </span>
+                    </label>
 
                 </div>
+        </div>
 
-                <div class="itemsContainer">
+        <div id="portfolio" class="section">
 
-                    <ul class="items">
+            <div class="container">
 
-                        <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="image/google.png">
-                                <div class="icons">
-                                    <a href="image/google.png" title="View image" class="openButton" data-fancybox
-                                        data-caption="This is a cute dog">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                    <a href="" target="_blank" class="projectLink">
-                                        <i class="fa fa-link"></i>
-                                    </a>
+                <div class="row">
+
+                    <div class="heading">
+                        <h1 class="tag-section">PORTFOLIO</h1>
+                    </div>
+
+                    <div class="filter">
+
+                        <ul id="filters">
+
+                            <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                            <li><a href="#" data-filter=".apps">Apps</a></li>
+                            <li><a href="#" data-filter=".me">Me</a></li>
+                            <li><a href="#" data-filter=".websites">Websites</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="itemsContainer">
+
+                        <ul class="items">
+
+                            <li class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
+                                    <img src="image/google.png">
+                                    <div class="icons">
+                                        <a href="image/google.png" title="View image" class="openButton" data-fancybox
+                                            data-caption="This is a cute dog">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
+
                                 </div>
-                                <div class="imageOverlay"></div>
 
-                            </div>
+                            </li>
 
-                        </li>
+                            <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
 
-                        <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
 
-                            <div class="item">
+                                    <img src="image/portfolio1.jpg">
 
-                                <img src="image/portfolio1.jpg">
+                                    <div class="icons">
+                                        <a href="image/portfolio1.jpg" title="View image" class="openButton"
+                                            data-fancybox data-caption="This is a cute dog">
+                                            <i class="fa fa-search"></i>
+                                        </a>
 
-                                <div class="icons">
-                                    <a href="image/portfolio1.jpg" title="View image" class="openButton" data-fancybox
-                                        data-caption="This is a cute dog">
-                                        <i class="fa fa-search"></i>
-                                    </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
 
-                                    <a href="" target="_blank" class="projectLink">
-                                        <i class="fa fa-link"></i>
-                                    </a>
                                 </div>
-                                <div class="imageOverlay"></div>
 
-                            </div>
+                            </li>
 
-                        </li>
+                            <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
 
-                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
 
-                            <div class="item">
+                                    <img src="image/insta.jfif">
 
-                                <img src="image/insta.jfif">
+                                    <div class="icons">
+                                        <a href="image/insta.jfif" title="View image" class="openButton" data-fancybox
+                                            data-caption="This is a cute dog">
+                                            <i class="fa fa-search"></i>
+                                        </a>
 
-                                <div class="icons">
-                                    <a href="image/insta.jfif" title="View image" class="openButton" data-fancybox
-                                        data-caption="This is a cute dog">
-                                        <i class="fa fa-search"></i>
-                                    </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
 
-                                    <a href="" target="_blank" class="projectLink">
-                                        <i class="fa fa-link"></i>
-                                    </a>
                                 </div>
-                                <div class="imageOverlay"></div>
 
-                            </div>
+                            </li>
 
-                        </li>
+                            <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
 
-                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
 
-                            <div class="item">
+                                    <img src="image/portfolio1.jpg">
 
-                                <img src="image/portfolio1.jpg">
+                                    <div class="icons">
+                                        <a href="image/portfolio1.jpg" title="View image" class="openButton"
+                                            data-fancybox data-caption="This is a cute dog">
+                                            <i class="fa fa-search"></i>
+                                        </a>
 
-                                <div class="icons">
-                                    <a href="image/portfolio1.jpg" title="View image" class="openButton" data-fancybox
-                                        data-caption="This is a cute dog">
-                                        <i class="fa fa-search"></i>
-                                    </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
 
-                                    <a href="" target="_blank" class="projectLink">
-                                        <i class="fa fa-link"></i>
-                                    </a>
                                 </div>
-                                <div class="imageOverlay"></div>
 
-                            </div>
+                            </li>
 
-                        </li>
+                            <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
 
-                        <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
 
-                            <div class="item">
+                                    <img src="image/portfolio1.jpg">
 
-                                <img src="image/portfolio1.jpg">
+                                    <div class="icons">
+                                        <a href="image/portfolio1.jpg" title="View image" class="openButton"
+                                            data-fancybox data-caption="This is a cute dog">
+                                            <i class="fa fa-search"></i>
+                                        </a>
 
-                                <div class="icons">
-                                    <a href="image/portfolio1.jpg" title="View image" class="openButton" data-fancybox
-                                        data-caption="This is a cute dog">
-                                        <i class="fa fa-search"></i>
-                                    </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
 
-                                    <a href="" target="_blank" class="projectLink">
-                                        <i class="fa fa-link"></i>
-                                    </a>
                                 </div>
-                                <div class="imageOverlay"></div>
 
-                            </div>
+                            </li>
 
-                        </li>
+                            <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
 
-                        <li class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
 
-                            <div class="item">
-
-                                <img src="image/portfolio1.jpg">
+                                    <img src="image/portfolio1.jpg">
 
 
-                                <div class="icons">
-                                    <a href="image/portfolio1.jpg" title="View image" class="openButton" data-fancybox
-                                        data-caption="This is a cute dog">
-                                        <i class="fa fa-search"></i>
-                                    </a>
+                                    <div class="icons">
+                                        <a href="image/portfolio1.jpg" title="View image" class="openButton"
+                                            data-fancybox data-caption="This is a cute dog">
+                                            <i class="fa fa-search"></i>
+                                        </a>
 
-                                    <a href="" target="_blank" class="projectLink">
-                                        <i class="fa fa-link"></i>
-                                    </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
+
                                 </div>
-                                <div class="imageOverlay"></div>
 
-                            </div>
+                            </li>
 
-                        </li>
+                            <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
 
-                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                                <div class="item">
 
-                            <div class="item">
-
-                                <img src="image/portfolio1.jpg">
+                                    <img src="image/portfolio1.jpg">
 
 
-                                <div class="icons">
-                                    <a href="image/portfolio1.jpg" title="View image" class="openButton" data-fancybox
-                                        data-caption="This is a cute dog">
-                                        <i class="fa fa-search"></i>
-                                    </a>
+                                    <div class="icons">
+                                        <a href="image/portfolio1.jpg" title="View image" class="openButton"
+                                            data-fancybox data-caption="This is a cute dog">
+                                            <i class="fa fa-search"></i>
+                                        </a>
 
-                                    <a href="" target="_blank" class="projectLink">
-                                        <i class="fa fa-link"></i>
-                                    </a>
+                                        <a href="" target="_blank" class="projectLink">
+                                            <i class="fa fa-link"></i>
+                                        </a>
+                                    </div>
+                                    <div class="imageOverlay"></div>
+
                                 </div>
-                                <div class="imageOverlay"></div>
 
-                            </div>
+                            </li>
 
-                        </li>
+                        </ul>
 
-                    </ul>
+                    </div>
 
                 </div>
 
@@ -460,28 +461,27 @@
 
         </div>
 
-    </div>
-
-    <div class="copyrightSection">
-        <div class="col-md-12 text-center">
-            <p>&copy;Copyright Blerton Shabani 2019</p>
+        <div class="copyrightSection">
+            <div class="col-md-12 text-center">
+                <p>&copy;Copyright Blerton Shabani 2019</p>
+            </div>
         </div>
-    </div>
 
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.easypiechart.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/typed.min.js"></script>
-    <script src="js/jquery.superslides.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.easypiechart.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/jquery.superslides.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 </body>
+
 
 </html>

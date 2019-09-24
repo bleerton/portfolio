@@ -1,3 +1,7 @@
+$(window).on("load" , function(){
+    $(".loader .inner").fadeOut(750)
+}) ;
+
 
 $(document).ready(function () {
 
@@ -128,35 +132,8 @@ $(document).ready(function () {
 });
 
 function scrollToId(id, el) {
-    // if (el != null) {
-    //     var input = $("#subject");
-    //     var subject = $(el).siblings("h5").text();
-
-    //     input.val(subject);
-    // }
 
     $("html, body").animate({
         scrollTop: $("#" + id).offset().top - 40 
     });
 }
-
-
-// $(window).scroll(function () {
-
-//     var top = $(this).scrollTop();
-//     var currentImgWidth = 130;
-//     var imgWidth = 100;
-//     var padding = 5;
-
-//     if (top < 300) {
-//         imgWidth = currentImgWidth;
-//         padding = 20;
-//     }
-
-//     $("nav img").css("width", imgWidth);
-//     $("nav").css({
-//         "paddingTop": padding,
-//         "paddingBottom": padding
-//     });
-
-// });

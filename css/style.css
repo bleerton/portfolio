@@ -13,27 +13,22 @@
     src: url("../font/Modster\ Script\ Free.ttf") format("opentype");
 }
 
-body{
-    background-color: #bdc3c7 ;
+body {
+    background-color: #bdc3c7;
 }
 
-
 img {
-    filter: brightness(50%);
+    filter: brightness(60%);
 }
 
 .main {
-    font-size: 30px ;
+    font-size: 30px;
+    font-family: Modset;
 }
 
 .tag-section {
-    font-size: 55px ;
+    font-size: 55px;
 }
-
-.main {
-    font-family: 'Modset';
-    margin-right: 500px ;
-  }
 
 .slides-navigation {
     z-index: 6;
@@ -78,7 +73,8 @@ img {
 }
 
 .tittleMessage .heading p {
-    color: #bdc3c7 ;;
+    color: #bdc3c7;
+    ;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 100;
     letter-spacing: 7px;
@@ -90,7 +86,6 @@ img {
 
 .tittleMessage .heading .sub {
     font-size: 23px;
-    margin-right: 500px ;
 }
 
 .section {
@@ -111,7 +106,6 @@ img {
     text-align: center;
     margin-left: 10px;
 }
-
 
 .chart {
     position: relative;
@@ -169,7 +163,6 @@ img {
     margin-bottom: 10px;
     font-weight: 400;
     color: #000;
-    
 }
 
 .squareContent h3 {
@@ -178,16 +171,17 @@ img {
     margin: 0;
 }
 
-.contactSection {
+.hire-me {
     text-align: center;
 }
 
-.contactSection button {
+.hire-me button {
     display: block;
     margin: auto;
+    margin-top: 80px;
     width: 150px;
     height: 50px;
-    background-color: #000000;
+    background-color: transparent ;
     cursor: pointer;
     color: #bdc3c7;
     outline: none;
@@ -199,8 +193,8 @@ img {
     transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
 }
 
-.contactSection button span {
-    text-decoration: none ;
+.hire-me button span {
+    text-decoration: none;
     z-index: 9;
     position: absolute;
     width: 80%;
@@ -210,9 +204,9 @@ img {
     top: 0px;
     line-height: 50px;
 }
- 
-.contactSection button span:after {
-    text-decoration: none ;
+
+.hire-me button span:after {
+    text-decoration: none;
     content: '';
     width: 130%;
     left: -15%;
@@ -224,40 +218,45 @@ img {
     transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
 }
 
-a {
-    color: #fff ;
-    text-decoration: none;
-}
-
-a:hover 
-{
-     color:#fff ;
-     text-decoration:none; 
-     cursor:pointer;  
-}
-
-.contactSection button span:hover:after {
+.hire-me button span:hover:after {
     height: 20px;
     top: -5px;
     transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
 }
 
-.contactSection button:hover {
+.hire-me button:hover {
+    background: #000 ;
     transform: scale(1.1);
     transition: all 350ms cubic-bezier(.8, .5, .2, 1.4);
     box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
 }
 
+#contact {
+    text-align: center ;
+    padding: 20px 5px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .filter a {
-	color: #000;
-	border: 1px solid #000000;
-	padding: 10px 18px;
-	display: block;
+    color: #000;
+    border: 1px solid #000000;
+    padding: 10px 18px;
+    display: block;
 }
 
 .filter li {
-	display: inline-block;
-	padding: 5px
+    display: inline-block;
+    padding: 5px
 }
 
 .filter li .current {
@@ -267,8 +266,8 @@ a:hover
 }
 
 .filter {
-	text-align: center;
-	width: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 #filters a:hover {
@@ -289,33 +288,32 @@ a:hover
 }
 
 .section .heading {
-	text-align: center;
-	padding-bottom: 40px;
-	width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
 }
 
 .items {
-    text-align: center ;
+    text-align: center;
 }
 
 .items li {
-	display: inline-block;
-	padding: 5px;
+    display: inline-block;
+    padding: 5px;
 }
 
 .itemsContainer {
-	width: 100%;
+    width: 100%;
 }
 
-
 .items li img {
-	width: 100%;
+    width: 100%;
 }
 
 .items .item {
-	position: relative;
-	display: block;
-	overflow: hidden;
+    position: relative;
+    display: block;
+    overflow: hidden;
 }
 
 .items .icons {
@@ -336,12 +334,11 @@ a:hover
 }
 
 .items a {
-	width: 40px;
+    width: 40px;
     height: 40px;
     background-color: #000;
     position: relative;
     display: inline-block;
-
     -webkit-transition: all 0.2s linear, 0.2s;
     -moz-transition: all 0.2s linear, 0.2s;
     -o-transition: all 0.2s linear, 0.2s;
@@ -350,14 +347,13 @@ a:hover
 }
 
 .items .imageOverlay {
-	width: 100%;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 0px;
     top: 0px;
     opacity: 0;
-
     -webkit-transition: all 0.2s linear, 1s;
     -moz-transition: all 0.2s linear, 1s;
     -o-transition: all 0.2s linear, 1s;
@@ -366,7 +362,7 @@ a:hover
 }
 
 .items .item:hover .imageOverlay {
-	opacity: 1;
+    opacity: 1;
 }
 
 #about {
@@ -384,117 +380,151 @@ a:hover
 }
 
 .items .openButton {
-    float: left ;
-    left: -200px ;
+    float: left;
+    left: -200px;
 }
 
 .items .projectLink {
-    float: right ;
-    right: -200px ;
+    float: right;
+    right: -200px;
 }
 
 .items .item:hover .openButton {
-    left: 0px ;
+    left: 0px;
 }
 
 .items .item:hover .projectLink {
-    right: 0px ;
+    right: 0px;
 }
 
 .items .item:hover img {
-    -webkit-transofrm: scale (1.05 , 1.05) ;
-    -moz-transform: scale (1.05 , 1.05) ;
-    -o-transform: scale (1.05 , 1.05) ;
-    -ms-transform: scale (1.05 , 1.05) ;
-    -transform: scale (1.05 , 1.05) ;
+    -webkit-transofrm: scale (1.05, 1.05);
+    -moz-transform: scale (1.05, 1.05);
+    -o-transform: scale (1.05, 1.05);
+    -ms-transform: scale (1.05, 1.05);
+    -transform: scale (1.05, 1.05);
 }
 
 .copyrightSection {
-    background-color: #000 ;
-    color : #fff ;
-    padding: 30px 5px ;
+    background-color: #000;
+    color: #fff;
+    padding: 30px 5px;
 }
-
-/* #navigation {
-    position: sticky; 
-    background-color: #000 ;
-    padding: 20px 10px ;
-    z-index: 100 ;
-    top: 0 ;
-}
-
-#navigation li{
-    padding: 0 10px ;
-
-}
-
-#navigation li a{
-    color: white ;
-}
-
-.navbar-brand , .navbar-brand:hover {
-    color: white ;
-}
-
-#navigation li{
-    text-align: center ;
-}
-
-.fixedNav #navigation {
-    position: fixed ;
-    top: 0 ;
-}
-
-.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-}
-
-.navbar-brand,
-.navbar-brand:hover {
-	color: #fff;
-}
-
-
-.fixedNav #navigation {
-	position: fixed;
-	top: 0;
-} */
 
 .contact a {
-    text-decoration: none ;
-    outline: none ;
+    text-decoration: none;
+    outline: none;
 }
 
 #navigation {
-	background-color: #000;
+    background-color: #000;
     padding: 10px 10px;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
 }
 
 #navigation li {
-	padding: 0 10px;
+    padding: 0 10px;
 }
 
 #navigation li a {
-	color: #fff;
+    color: #fff;
 }
 
-.navbar-brand,
-.navbar-brand:hover {
-	color: #fff;
+.navbar-brand, .navbar-brand:hover {
+    color: #fff;
 }
 
 .navbar-toggler-icon {
-	background: url(../img/icons/menu.png);
-	background-size: 100%;
+    background: url(../img/icons/menu.png);
+    background-size: 100%;
 }
 
 #navigation {
-	position: sticky;
-	top: 0;
+    position: sticky;
+    top: 0;
 }
 
+.contact-head {
+    display: block ;
+}
 
+#contact input {
+    background-color: #000000  ;
+}
+
+#contact .inputs{
+    margin-top: 70px ;
+    color: white ;
+    width:50%;
+    height:50px;
+    position: sticky;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+ #contact .inputs input{
+    width:100%;
+    height:100%;
+    color:#000;
+    padding-top:10px;
+    border:none;
+    font-size: 16px;
+    outline: none;
+} 
+#contact .inputs label{
+    margin-top: px ;
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    /* border-bottom: 3px solid #efefef; */
+}
+#contact .inputs label:after{
+    content:'';
+    width:100%;
+    height:100%;
+    left:0px;
+    bottom:-3px;
+    border-bottom: 3px solid #3498db;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all .6s ease;
+}
+#contact .inputs label span{
+    position: absolute;
+    bottom:5px;
+    left:0px;
+    transition: all .6s ease;
+    columns: #000000;;
+}
+#contact .inputs input:focus + label span,
+#contact .inputs input:valid + label span{
+    transform: translateY(-20px);
+    transition: all .6s ease;
+    color:#3498db;
+}
+#contact .inputs input:focus + label:after,
+#contact .inputs input:valid + label:after{
+    transform: translateX(0%);
+    transition: all .6s ease;
+}
+
+.loader {
+    width: 100% ;
+    height: 100% ;
+    
+    position: absolute ;
+    top: 0px ;
+    left: 0px ;
+    z-index: 1000 ;
+}
+
+.loader .inner{
+    width: 100% ;
+    height: 100% ;
+    background: url(../image/loader2.gif) center center no-repeat ;
+}
