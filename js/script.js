@@ -1,6 +1,10 @@
-$(window).on("load" , function(){
-    $(".loader .inner").fadeOut(750)
-}) ;
+$(window).on("load", function() {
+
+	$(".loader .inner").fadeOut(800 , function(){
+        $(".loader").fadeOut(200) ;
+    }) ;
+
+})
 
 
 $(document).ready(function () {
@@ -132,8 +136,15 @@ $(document).ready(function () {
 });
 
 function scrollToId(id, el) {
-
     $("html, body").animate({
         scrollTop: $("#" + id).offset().top - 40 
     });
 }
+
+$( '.js-input' ).keyup(function() {
+    if( $(this).val() ) {
+       $(this).addClass('not-empty');
+    } else {
+       $(this).removeClass('not-empty');
+    }
+  });

@@ -13,263 +13,293 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
+
 </head>
 
 <body>
 
     <div class="loader">
-        <div class="inner">
+        <div class="inner"> </div>
+    </div>
+
+
+    <div id="slides">
+        <div class="overlay"></div>
+        <div class="tittleMessage">
+            <div class="heading">
+                <p class="main">BLERTON SHABANI</p>
+                <p class="sub typed"></p>
+            </div>
+        </div>
+
+        <div class="slides-container">
+            <img src="image/slide1.jpg" alt="">
+            <img src="image/slide5.webp" alt="">
+            <img src="image/slide2.jpeg" alt="">
+            <img src="image/slide3.jpg" alt="">
 
         </div>
 
-        <div id="slides">
-            <div class="overlay"></div>
-            <div class="tittleMessage">
-                <div class="heading">
-                    <p class="main">BLERTON SHABANI</p>
-                    <p class="sub typed"></p>
-                </div>
+        <nav class="slides-navigation">
+            <a href="#" class="next"></a>
+            <a href="#" class="prev"></a>
+
+            <div class="hire-me">
+                <button>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    <!-- <span class="contactButton" onclick="window.open('https://t.me/blrtn')">HIRE ME</span></a> -->
+                    <span class="contactButton" onclick="scrollToId('contact', this)" class="btn btn-primary">HIRE
+                        ME</span></a>
+                </button>
             </div>
-
-            <div class="slides-container">
-                <img src="image/slide3.jpg" alt="">
-                <img src="image/slide5.webp" alt="">
-                <img src="image/slide2.jpeg" alt="">
-                <img src="image/slide1.jpg" alt="">
-
-            </div>
-
-            <nav class="slides-navigation">
-                <a href="#" class="next"></a>
-                <a href="#" class="prev"></a>
-
-                <div class="hire-me">
-                    <button>
-                        <div class="left"></div>
-                        <div class="right"></div>
-                        <!-- <span class="contactButton" onclick="window.open('https://t.me/blrtn')">HIRE ME</span></a> -->
-                        <span class="contactButton" onclick="scrollToId('contact', this)" class="btn btn-primary">HIRE
-                            ME</span></a>
-                    </button>
-                </div>
-            </nav>
-
-        </div>
-
-
-
-        <nav id="navigation" class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html" style="padding: 0 40px ; font-family: Modset">Blerton Shabani</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="scrollToId('slides', this)" class="btn btn-primary">Head</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollToId('about', this)" class="btn btn-primary">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollToId('stats', this)" class="btn btn-primary">Stats</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollToId('contact', this)" class="btn btn-primary">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="scrollToId('portfolio', this)"
-                            class="btn btn-primary">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-
         </nav>
 
-        <div id="about" class="section">
-            <div class="container">
-                <h1 class="tag-section">ABOUT</h1>
-                <img src="image/about.png" alt="">
-                <p>
-                    I'm a freelancer, full stack developer specialized in <span>Web</span>, <span>Progressive Web
-                        Apps</span> and <span>Mobile iOS/Android</span> projects. I've got experience in project
-                    management
-                    and team lead. I also provide UX and IT consulting.
-                </p>
-                <br>
+    </div>
 
-                <p>
-                    I speak fluently french, german and english and I'm currently based in Zürich, Switzerland.</p>
 
-                <br>
-                <p>
-                    You could hire my services to work closely with your team or ask me to take over your overall
-                    project as
-                    I did with the projects I showcase in my portfolio.
-                </p>
-                <p>I also LOVE ❤️ solving Coding Challenges using JavaScript!</p>
-            </div>
+
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html" style="padding: 0 40px ; font-family: Modset">Blerton Shabani</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" onclick="scrollToId('slides', this)" class="btn btn-primary">Head</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToId('about', this)" class="btn btn-primary">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToId('stats', this)" class="btn btn-primary">Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToId('contact', this)" class="btn btn-primary">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="scrollToId('portfolio', this)" class="btn btn-primary">Portfolio</a>
+                </li>
+            </ul>
         </div>
 
-        <div id="skills" class="skillsSection section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h1 class="tag-section">TECHNINAL SKILLS</h2>
-                            <p>A representation of my proficiency in each skill</p>
-                    </div>
+    </nav>
 
-                    <div class="owl-carousel owl-theme">
-                        <div class="skill">
-                            <span class="chart" data-percent="40">
-                                <span class="percent">40
-                                </span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
+    <div id="about" class="section">
+        <div class="container">
+            <h1 class="tag-section">ABOUT</h1>
+            <img src="image/about.png" alt="">
+            <p>
+                I'm a freelancer, full stack developer specialized in <span>Web</span>, <span>Progressive Web
+                    Apps</span> and <span>Mobile iOS/Android</span> projects. I've got experience in project
+                management
+                and team lead. I also provide UX and IT consulting.
+            </p>
+            <br>
 
-                            <h4>HTML</h4>
-                            <p>Used in most of my web projects</p>
-                        </div>
-                        <div class="skill">
-                            <span class="chart" data-percent="55">
-                                <span class="percent">55
-                                </span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
+            <p>
+                I speak fluently french, german and english and I'm currently based in Zürich, Switzerland.</p>
 
-                            <h4>PYTHON</h4>
-                            <p>Used in most of my web projects</p>
-                        </div>
-                        <div class="skill">
-                            <span class="chart" data-percent="25">
-                                <span class="percent">25
-                                </span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
+            <br>
+            <p>
+                You could hire my services to work closely with your team or ask me to take over your overall
+                project as
+                I did with the projects I showcase in my portfolio.
+            </p>
+            <p>I also LOVE ❤️ solving Coding Challenges using JavaScript!</p>
+        </div>
+    </div>
 
-                            <h4>CSS3</h4>
-                            <p>Used in most of my web projects</p>
-                        </div>
-
-                        <div class="skill">
-                            <span class="chart" data-percent="60">
-                                <span class="percent">60
-                                </span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
-
-                            <h4>JAVA</h4>
-                            <p>Used in most of my web projects</p>
-                        </div>
-                    </div>
+    <div id="skills" class="skillsSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="tag-section">TECHNINAL SKILLS</h2>
+                        <p>A representation of my proficiency in each skill</p>
                 </div>
-            </div>
-        </div>
 
-        <div id="stats" class="statsSection section">
-            <h1 class="tag-section" style="text-align: center ;">STATS</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-
-                        <div class="squareItem">
-
-                            <div class="squareInnerContainer">
-
-                                <div class="squareIcon">
-                                    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
-
-                                </div>
-
-
-                                <div class="squareContent">
-                                    <h2 class="counter" data-count="3">0</h2>
-                                    <h3>Years Experience</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-
-                        <div class="squareItem">
-
-                            <div class="squareInnerContainer">
-
-                                <div class="squareIcon">
-                                    <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
-
-                                </div>
-
-                                <div class="squareContent">
-                                    <h2 class="counter" data-count="85">0</h2>
-                                    <h3>Clients</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-
-                        <div class="squareItem">
-
-                            <div class="squareInnerContainer">
-
-                                <div class="squareIcon">
-                                    <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
-
-                                </div>
-
-                                <div class="squareContent">
-                                    <h2 class="counter" data-count="7">0</h2>
-                                    <h3>iOS Apps</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-
-                        <div class="squareItem">
-
-                            <div class="squareInnerContainer">
-
-                                <div class="squareIcon">
-                                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-
-                                </div>
-
-                                <div class="squareContent">
-                                    <h2 class="counter" data-count="25">0</h2>
-                                    <h3>Websites made</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="contact" class="contactSection section">
-            <h4 class="subHeading contact-head">Like what you see ?</h2>
-                <h1 class="subHeading contact-head">I'd love to hear from you !</h1>
-                <div class="inputs">
-                    <input type="text" name="name" required>
-                    <label for="fullName">
-                        <span>
-                            Full Name
+                <div class="owl-carousel owl-theme">
+                    <div class="skill">
+                        <span class="chart" data-percent="40">
+                            <span class="percent">40
+                            </span>
+                            <canvas height="152" width="152"></canvas>
                         </span>
-                    </label>
 
-                    <input type="text" name="surname" required>
-                    <label for="surname">
-                        <span>
-                            Surname
+                        <h4>HTML</h4>
+                        <p>Used in most of my web projects</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="55">
+                            <span class="percent">55
+                            </span>
+                            <canvas height="152" width="152"></canvas>
                         </span>
-                    </label>
 
+                        <h4>PYTHON</h4>
+                        <p>Used in most of my web projects</p>
+                    </div>
+                    <div class="skill">
+                        <span class="chart" data-percent="25">
+                            <span class="percent">25
+                            </span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+
+                        <h4>CSS3</h4>
+                        <p>Used in most of my web projects</p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="60">
+                            <span class="percent">60
+                            </span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+
+                        <h4>JAVA</h4>
+                        <p>Used in most of my web projects</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stats" class="statsSection section">
+        <h1 class="tag-section" style="text-align: center ;">STATS</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer">
+
+                            <div class="squareIcon">
+                                <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+
+                            </div>
+
+
+                            <div class="squareContent">
+                                <h2 class="counter" data-count="3">0</h2>
+                                <h3>Years Experience</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer">
+
+                            <div class="squareIcon">
+                                <i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+
+                            </div>
+
+                            <div class="squareContent">
+                                <h2 class="counter" data-count="85">0</h2>
+                                <h3>Clients</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer">
+
+                            <div class="squareIcon">
+                                <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+
+                            </div>
+
+                            <div class="squareContent">
+                                <h2 class="counter" data-count="7">0</h2>
+                                <h3>iOS Apps</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer">
+
+                            <div class="squareIcon">
+                                <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+
+                            </div>
+
+                            <div class="squareContent">
+                                <h2 class="counter" data-count="25">0</h2>
+                                <h3>Websites made</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contactSection section">
+        <h4 class="subHeading contact-head">Like what you see ?</h4>
+        <br>
+        <br>
+        <h1 class="subHeading contact-head">I'd love to hear from you !</h1>
+        <div class="inputs">
+            <div class="col-md-12 text-center">
+                <div class="container-contact100">
+
+                    <div class="wrap-contact100">
+                        <form class="contact100-form validate-form">
+                            <!-- <span class="contact100-form-title">
+                            Send Us A Message
+                        </span> -->
+
+                            <div class="wrap-input100 validate-input" data-validate="Please enter your name">
+                                <input class="input100" type="text" name="name" placeholder="Full Name">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input" data-validate="Please enter your email: e@a.x">
+                                <input class="input100" type="text" name="email" placeholder="E-mail">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input" data-validate="Please enter your phone">
+                                <input class="input100" type="text" name="phone" placeholder="Phone">
+                                <span class="focus-input100"></span>
+                            </div>
+
+                            <div class="wrap-input100 validate-input" data-validate="Please enter your message">
+                                <textarea class="input100" name="message" placeholder="Your Message"></textarea>
+                                <span class="focus-input100"></span>
+                            </div>
+
+                            <div class="container-contact100-form-btn">
+                                <button class="contact100-form-btn">
+                                    <span>
+                                        <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                                        Send
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dropDownSelect1"></div>
         </div>
 
         <div id="portfolio" class="section">

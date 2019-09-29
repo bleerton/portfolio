@@ -417,6 +417,7 @@ a:hover {
 }
 
 #navigation {
+    position: sticky ;
     background-color: #000;
     padding: 10px 10px;
     z-index: 1000;
@@ -441,90 +442,353 @@ a:hover {
 }
 
 #navigation {
-    position: sticky;
+    position: coicky;
     top: 0;
 }
 
 .contact-head {
     display: block ;
-}
-
-#contact input {
-    background-color: #000000  ;
-}
-
-#contact .inputs{
-    margin-top: 70px ;
-    color: white ;
-    width:50%;
-    height:50px;
-    position: sticky;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-}
- #contact .inputs input{
-    width:100%;
-    height:100%;
-    color:#000;
-    padding-top:10px;
-    border:none;
-    font-size: 16px;
-    outline: none;
-} 
-#contact .inputs label{
-    margin-top: px ;
-    position: absolute;
-    left:0px;
-    bottom: 0px;
-    width:100%;
-    height:100%;
-    pointer-events: none;
-    /* border-bottom: 3px solid #efefef; */
-}
-#contact .inputs label:after{
-    content:'';
-    width:100%;
-    height:100%;
-    left:0px;
-    bottom:-3px;
-    border-bottom: 3px solid #3498db;
-    position: absolute;
-    transform: translateX(-100%);
-    transition: all .6s ease;
-}
-#contact .inputs label span{
-    position: absolute;
-    bottom:5px;
-    left:0px;
-    transition: all .6s ease;
-    columns: #000000;;
-}
-#contact .inputs input:focus + label span,
-#contact .inputs input:valid + label span{
-    transform: translateY(-20px);
-    transition: all .6s ease;
-    color:#3498db;
-}
-#contact .inputs input:focus + label:after,
-#contact .inputs input:valid + label:after{
-    transform: translateX(0%);
-    transition: all .6s ease;
+    margin-top: 50px ; ;
 }
 
 .loader {
     width: 100% ;
     height: 100% ;
-    
     position: absolute ;
     top: 0px ;
     left: 0px ;
-    z-index: 1000 ;
+    z-index: 99999 ;
 }
 
 .loader .inner{
     width: 100% ;
     height: 100% ;
     background: url(../image/loader2.gif) center center no-repeat ;
+}
+
+
+#contact a {
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+#contact a:focus {
+	outline: none !important;
+}
+
+#contact a:hover {
+	text-decoration: none;
+}
+
+#contact h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+#contact p {
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+#contact ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input::-webkit-input-placeholder { color: #bdbdd3;}
+input:-moz-placeholder { color: #bdbdd3;}
+input::-moz-placeholder { color: #bdbdd3;}
+input:-ms-input-placeholder { color: #bdbdd3;}
+
+textarea::-webkit-input-placeholder { color: #bdbdd3;}
+textarea:-moz-placeholder { color: #bdbdd3;}
+textarea::-moz-placeholder { color: #bdbdd3;}
+textarea:-ms-input-placeholder { color: #bdbdd3;}
+
+
+#contact button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+#contact button:hover {
+	cursor: pointer;
+}
+
+#contact iframe {
+	border: none !important;
+}
+
+.#contact container {
+	max-width: 1200px;
+}
+
+
+#contact .container-contact100 {
+  width: 100%;  
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: #000;
+}
+
+#contact .wrap-contact100 {
+  width: 550px;
+  background: transparent;
+  padding: 50px 0px 160px 0px;
+}
+
+#contact .contact100-form {
+  width: 100%;
+}
+
+.#contact contact100-form-title {
+  display: block;
+  font-size: 30px;
+  color: #bdc3c7;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 49px;
+}
+
+
+#contact .wrap-input100 {
+  width: 100%;
+  background-color: #bdc3c7 ;
+  border-radius: 31px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.input100 {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #bdc3c7;
+  border-radius: 31px;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.2;
+}
+
+input.input100 {
+  height: 62px;
+  padding: 0 35px 0 35px;
+}
+
+
+textarea.input100 {
+  min-height: 169px;
+  padding: 19px 35px 0 35px;
+}
+
+
+.focus-input100 {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #bcbcbc;
+  pointer-events: none;
+  
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100 {
+  width: calc(100% + 20px);
+}
+
+.container-contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 150px;
+  height: 62px;
+  background-color: transparent;
+  border-radius: 31px;
+
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+.contact100-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #827ffe;
+  pointer-events: none;
+  
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn:hover:before {
+  background-color: #403866;
+  width: calc(100% + 20px);
+}
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  z-index: 1000;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 14px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10px;
+  pointer-events: none;
+
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  display: block;
+  position: absolute;
+  z-index: 1100;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+#contact ::placeholder {
+    color: #000 ;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+#portfolio {
+    background-color: #bdc3c7 ;
+    color: #000 ;
 }
