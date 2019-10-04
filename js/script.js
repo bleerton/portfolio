@@ -1,15 +1,15 @@
-$(window).on("load", function() {
+$(window).on("load", function () {
 
-	$(".loader .inner").fadeOut(800 , function(){
-        $(".loader").fadeOut(200) ;
-    }) ;
+    $(".loader .inner").fadeOut(800, function () {
+        $(".loader").fadeOut(200);
+    });
 
 })
 
 
 $(document).ready(function () {
 
-    
+
 
     $('#slides').superslides({
         animation: 'fade',
@@ -137,14 +137,21 @@ $(document).ready(function () {
 
 function scrollToId(id, el) {
     $("html, body").animate({
-        scrollTop: $("#" + id).offset().top - 40 
+        scrollTop: $("#" + id).offset().top - 50
     });
 }
 
-$( '.js-input' ).keyup(function() {
-    if( $(this).val() ) {
-       $(this).addClass('not-empty');
+$('.js-input').keyup(function () {
+    if ($(this).val()) {
+        $(this).addClass('not-empty');
     } else {
-       $(this).removeClass('not-empty');
+        $(this).removeClass('not-empty');
     }
-  });
+});
+
+const icons = document.querySelectorAll('.icon');
+icons.forEach(icon => {
+    icon.addEventListener('click', (event) => {
+        icon.classList.toggle("open");
+    });
+});
